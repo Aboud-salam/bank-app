@@ -13,7 +13,9 @@ const Testimonials = () => {
   const [selectedIndex, setIndex] = useState(-1);
   return (
     <section id="clients" className={`${styles.paddingY} mt-10`}>
-      <div className={`flex justify-between items-center`}>
+      <div
+        className={`flex justify-center md:justify-between md:text-left text-center items-center flex-wrap`}
+      >
         <h1 className={`${styles.heading2} max-w-[450px]`}>
           What people are saying about us
         </h1>
@@ -22,7 +24,7 @@ const Testimonials = () => {
           anywhere on the planet.
         </p>
       </div>
-      <div className="flex gap-5 justify-between mt-20">
+      <div className="flex md:gap-5 gap-7 justify-center md:justify-between md:text-left text-center mt-20 flex-wrap">
         {feedback.map((client, index) => (
           <FeedBackCard
             style={selectedIndex === index ? "bg-black-gradient" : ""}

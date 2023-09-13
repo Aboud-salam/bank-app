@@ -4,7 +4,7 @@ import Button from "./Button";
 const CTA = () => {
   return (
     <div
-      className={`flex justify-between items-center p-20 bg-black-gradient rounded-[20px] ${styles.marginY}`}
+      className={`flex md:justify-between justify-center gap-7 md:text-left text-center items-center p-20 bg-black-gradient rounded-[20px] ${styles.marginY} flex-wrap`}
     >
       <h2 className={`${styles.heading2} font-poppins`}>
         Let's try our service now!

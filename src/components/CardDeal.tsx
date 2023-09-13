@@ -23,8 +23,8 @@ const Analysis = ({ style }: Props) => {
           onClick={() => setToggle(!isToggled)}
         >
           <div
-            className={`bg-transparent text-white cursor-pointer outline-none appearance-none absolute right-[22px] w-[70px] bg-black-gradient rounded-[10px] top-0 ${
-              isToggled ? "block" : "hidden"
+            className={`bg-transparent text-white slide-left transition duration-400 cursor-pointer outline-none appearance-none absolute right-[22px] w-[70px] bg-black-gradient rounded-[10px] top-0 ${
+              isToggled ? "opacity-100" : "opacity-0"
             }`}
           >
             {options.map((option, index) => (
@@ -144,7 +144,7 @@ const CardDeal = () => {
           PaymentMethods
         </div>
       </div>
-      <div className="ss:hidden flex flex-col gap-3">
+      <div className="ss:hidden flex flex-col gap-3 overflow-hidden">
         <Analysis style="" />
         <PaymentMethods style="" />
         <Scan style="" />

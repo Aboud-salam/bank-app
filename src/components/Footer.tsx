@@ -5,17 +5,23 @@ import styles from "../style";
 const Footer = () => {
   return (
     <section className={``}>
-      <div className={`flex gap-32 items-center ${styles.paddingY}`}>
+      <div
+        className={`flex sm:gap-16 md:gap-32 gap-12 sm:flex-row flex-col justify-center items-center ${styles.paddingY} text-center`}
+      >
         <div>
           <img src={logo} alt="" />
-          <p className={`${styles.paragraph} max-w-[320px] font-poppins mt-8`}>
+          <p
+            className={`${styles.paragraph} max-w-[320px] font-poppins ss:mt-8 mt-4`}
+          >
             A new way to make the payments easy, reliable and secure.
           </p>
         </div>
-        <div className={`flex justify-between flex-1`}>
+        <div
+          className={`flex ss:justify-between  flex-1 ss:flex-row flex-col flex-wrap gap-5`}
+        >
           {footerLinks.map((section, index) => (
             <div key={index}>
-              <h4 className="text-white font-poppins text-[18px] font-medium mb-6">
+              <h4 className="text-white font-poppins text-[18px] font-medium ss:mb-6 mb-3">
                 {section.title}
               </h4>
               {/* {footerLinks.map(({ links }, i) =>
@@ -27,7 +33,7 @@ const Footer = () => {
                 </ul>
               ) : null
             )} */}
-              <ul className="footer-links list-none gap-2 flex flex-col">
+              <ul className="footer-links list-none ss:gap-2 flex flex-col">
                 {footerLinks[index].links.map((link, i) => (
                   <li
                     key={i}
@@ -41,7 +47,7 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <div className="text-center flex justify-between py-6 border-t-[1px] border-gray-600">
+      <div className="text-center flex ss:justify-between gap-3 justify-center pt-6 pb-2 border-t-[1px] border-gray-600 flex-wrap-reverse">
         <p className={`${styles.paragraph}`}>
           <span className="text-dimWhite text-[18px] font-abel font-normal">
             Copyright
