@@ -165,21 +165,21 @@
 }
 .robot-gradient-white {
   border-radius: 471px;
-  background: rgba(255, 255, 255, 0.6);
-  filter: blur(375px);
+  background: rgba(255, 255, 255, 0.1);
+  filter: blur(74px);
 }
 .robot-side-gradient {
   border-radius: 200px;
   background: linear-gradient(
     90deg,
     rgba(26, 41, 128, 0.5) 0%,
-    rgba(38, 208, 206, 0.5) 100%
+    rgb(38 208 206 / 34%) 100%
   );
-  filter: blur(325px);
+  filter: blur(90px);
 }
 .heading-gradient {
   border-radius: 324px;
-  background: #fff;
+  background: rgb(255 255 255 / 60%);
   filter: blur(225px);
 }
 .select-arrow {

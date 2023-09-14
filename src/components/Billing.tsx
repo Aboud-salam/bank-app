@@ -118,8 +118,8 @@ const Billing = () => {
           <img src={google} alt="" />
         </div>
       </div>
-      <div className="white__gradient__02 w-[350px] h-[400px] absolute -left-[400px] bottom-[50%] rounded-[450px] rotate-[176deg] -z-[1]"></div>
-      <div className="pink__gradient__02 w-[350px] h-[450px] absolute -left-[400px] top-[50%] rounded-[450px] rotate-[156deg] -z-[1]"></div>
+      <div className="heading-gradient w-[350px] h-[400px] absolute -left-[400px] bottom-[30%] rounded-[450px] rotate-[176deg] -z-[1]"></div>
+      <div className="robot-side-gradient w-[350px] h-[450px] absolute -left-[400px] top-[30%] rounded-[450px] rotate-[156deg] -z-[1]"></div>
     </section>
   );
 };

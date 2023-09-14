@@ -25,7 +25,7 @@ function App() {
         </div>
       </div>
       <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
+        <div className={`${styles.boxWidth} container mx-auto`}>
           <Stats />
           <Business />
           <Billing />

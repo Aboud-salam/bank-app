@@ -41,7 +41,6 @@ const Hero = () => {
         <div className="absolute -left-[120px] heading-gradient h-[300px] w-[200px] top-auto" />
       </div>
       <div className="relative w-[100%] h-[100%] my-3 sm:my-0">
-        <div className="absolute w-[40%] top-0 h-[35%] pink__gradient"></div>
         <div className="absolute w-[480px] robot-side-gradient -top-20 rounded-[200px] -rotate-[67deg] left-[80%] h-[615px]"></div>
         <div className="absolute w-[400px] rounded-full bottom-40 right-0 h-[470px] robot-gradient-white"></div>
         <div className="absolute w-[80%] rounded-full bottom-40 left-10 h-[80%] robot-gradient"></div>
